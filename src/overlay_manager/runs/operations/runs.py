@@ -148,22 +148,26 @@ def _update_intermission(obs: obs_client.ObsClient, run: models.Run) -> None:
 
 def _update_run(obs: obs_client.ObsClient, run: models.Run):
     runners_name_display = [
-        ["Runneureuse_1_1P_4:3", "Runneureuse_1_1P_WS", "Runneureuse_1_2P_WS"],
-        ["Runneureuse_2_2P_WS"],
+        ["Runneureuse_1_1P_4:3", "Runneureuse_1_1P_WS", "Runneureuse_1_2P_4:3", "Runneureuse_1_2P_WS"],
+        ["Runneureuse_2_2P_4:3", "Runneureuse_2_2P_WS"],
         [],
         [],
     ]
     commentators_name_display = [
-        ["Commentateurice_1_1P_4:3", "Commentateurice_1_1P_WS", "Commentateurice_1_2P_WS"],
-        ["Commentateurice_2_1P_4:3", "Commentateurice_2_1P_WS", "Commentateurice_2_2P_WS"],
+        ["Commentateurice_1_1P_4:3", "Commentateurice_1_1P_WS", "Commentateurice_1_2P_4:3", "Commentateurice_1_2P_WS"],
+        ["Commentateurice_2_1P_4:3", "Commentateurice_2_1P_WS", "Commentateurice_2_1P_4:3", "Commentateurice_2_2P_WS"],
     ]
     runners_pronouns_display = [
         [
             "Runneureuse_1_Pronoms_1P_4:3",
             "Runneureuse_1_Pronoms_1P_WS",
+            "Runneureuse_1_Pronoms_2P_4:3",
             "Runneureuse_1_Pronoms_2P_WS",
         ],
-        ["Runneureuse_2_Pronoms_2P_WS"],
+        [
+            "Runneureuse_2_Pronoms_2P_WS",
+            "Runneureuse_2_Pronoms_2P_4:3",
+        ],
         [],
         [],
     ]
@@ -171,11 +175,13 @@ def _update_run(obs: obs_client.ObsClient, run: models.Run):
         [
             "Commentateurice_1_Pronoms_1P_4:3",
             "Commentateurice_1_Pronoms_1P_WS",
+            "Commentateurice_1_Pronoms_2P_4:3",
             "Commentateurice_1_Pronoms_2P_WS",
         ],
         [
             "Commentateurice_2_Pronoms_1P_4:3",
             "Commentateurice_2_Pronoms_1P_WS",
+            "Commentateurice_2_Pronoms_2P_4:3",
             "Commentateurice_2_Pronoms_2P_WS",
         ],
     ]
@@ -185,8 +191,8 @@ def _update_run(obs: obs_client.ObsClient, run: models.Run):
         [],
         [],
     ]
-    run_title_displays = ["Titre_1P_WS", "Titre_1P_4:3", "Titre_4P"]
-    run_category_displays = ["Categorie_1P_WS", "Categorie_1P_4:3", "Categorie_4P"]
+    run_title_displays = ["Titre_1P_WS", "Titre_1P_4:3", "Titre_2P", "Titre_4P"]
+    run_category_displays = ["Categorie_1P_WS", "Categorie_1P_4:3", "Categorie_2P", "Categorie_4P"]
     run_platform_displays = ["Support/Année_1P_WS", "Support/Année_1P_4:3", "Support/Année_4P"]
     run_estimated_time_displays = ["Estimate"]
     next_run_displays = []
